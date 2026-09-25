@@ -3,112 +3,453 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Dela Cruz | Student Portfolio</title>
+  <title>Discover Philippines | Your Ultimate Travel Guide</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <h1 class="site-title">Juan Dela Cruz</h1>
-    <p class="site-tagline">IT Student &middot; Aspiring Web Developer</p>
+  <!-- ========== HEADER ========== -->
+  <header id="home">
+    <div class="header-overlay">
+      <div class="header-content">
+        <p class="header-eyebrow">&#127796; &nbsp; IT'S MORE FUN IN THE</p>
+        <h1>Philippines</h1>
+        <div class="header-divider"><span></span><span class="diamond">&#9670;</span><span></span></div>
+        <p class="tagline">7,641 islands &nbsp;&middot;&nbsp; Pristine beaches &nbsp;&middot;&nbsp; Rich culture &nbsp;&middot;&nbsp; Breathtaking adventures</p>
+        <div class="clock-box">
+          <span class="clock-label">&#128336; Philippine Time &nbsp;</span>
+          <span id="liveClock">--:--:-- --</span>
+        </div>
+        <div class="header-btns">
+          <a href="#destinations" class="btn btn-primary">Explore Now</a>
+          <a href="#about" class="btn btn-ghost">Learn More</a>
+        </div>
+      </div>
+      <div class="scroll-hint">&#9660;</div>
+    </div>
   </header>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#features">Fun Stuff</a></li>
-    </ul>
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">&#127796; <span>Discover PH</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#countdown-section">Holiday</a></li>
+        <li><a href="#contact" class="nav-cta">Plan Trip</a></li>
+      </ul>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main>
 
-    <!-- SECTION 1: ABOUT -->
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
-      <img src="https://placehold.co/300x300/6c63ff/ffffff?text=Your+Photo"
-           alt="Profile photo placeholder" class="profile-img" />
-      <p>
-        Hi! I'm a student passionate about technology and web development.
-        This portfolio was built using HTML, CSS, and JavaScript, and published
-        with GitHub Pages as part of my class activity.
-      </p>
-      <h3>Skills</h3>
-      <ul class="skills-list">
-        <li>HTML5 &amp; Semantic Markup</li>
-        <li>CSS3 &amp; Responsive Design</li>
-        <li>JavaScript Fundamentals</li>
-        <li>Git &amp; GitHub</li>
-      </ul>
-    </section>
-
-    <!-- SECTION 2: PROJECTS -->
-    <section id="projects" class="content-section alt-bg">
-      <h2>Projects</h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="https://placehold.co/250x150/2c3e50/ffffff?text=Project+1" alt="Project one screenshot" />
-          <h3>Project One</h3>
-          <p>A short description of a project you built or worked on.</p>
+    <!-- SECTION 1: About -->
+    <section id="about" class="section">
+      <div class="section-inner about-grid">
+        <div class="about-text">
+          <div class="section-label">ABOUT THE DESTINATION</div>
+          <h2>A Nation of <span class="highlight">7,641 Islands</span></h2>
+          <p>
+            The <strong>Republic of the Philippines</strong> is a Southeast Asian archipelago nestled
+            in the western Pacific Ocean. Known for pristine beaches, dramatic landscapes, and some of
+            the warmest people on earth, the Philippines offers experiences found nowhere else.
+          </p>
+          <p>
+            From the powder-white sands of <strong>Boracay</strong> to the UNESCO rice terraces of
+            <strong>Banaue</strong>, the emerald lagoons of <strong>Palawan</strong> to the surf
+            breaks of <strong>Siargao</strong> — every island has its own story.
+          </p>
+          <h3 class="sub-heading">Quick Facts</h3>
+          <ul class="styled-list">
+            <li>&#128506; Capital: <strong>Manila</strong></li>
+            <li>&#127758; Languages: <strong>Filipino (Tagalog) &amp; English</strong></li>
+            <li>&#128101; Population: <strong>~115 million</strong></li>
+            <li>&#127796; Total Islands: <strong>7,641</strong></li>
+            <li>&#9925; Best Season: <strong>November – May (Dry Season)</strong></li>
+            <li>&#128178; Currency: <strong>Philippine Peso (PHP &#8369;)</strong></li>
+            <li>&#9992;&#65039; Airports: <strong>Manila (NAIA), Cebu (MCIA), Clark (CRK)</strong></li>
+          </ul>
         </div>
-        <div class="card">
-          <img src="https://placehold.co/250x150/2c3e50/ffffff?text=Project+2" alt="Project two screenshot" />
-          <h3>Project Two</h3>
-          <p>Another project description goes here.</p>
+        <div class="about-img-wrapper">
+          <!-- picsum with a consistent seed — always renders a beautiful landscape -->
+          <img
+            src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&q=80"
+            alt="El Nido Palawan limestone cliffs and turquoise lagoon"
+            class="about-img"
+          />
+          <div class="img-badge-box">
+            <span class="badge-num">7,641</span>
+            <span class="badge-lbl">Islands</span>
+          </div>
+          <p class="img-caption">&#128205; El Nido, Palawan — UNESCO World Heritage</p>
         </div>
-        <div class="card">
-          <img src="https://placehold.co/250x150/2c3e50/ffffff?text=Project+3" alt="Project three screenshot" />
-          <h3>Project Three</h3>
-          <p>Describe what you learned while making this one.</p>
-        </div>
-      </div>
-      <p>
-        View more of my work on
-        <a href="https://github.com/" target="_blank" rel="noopener">my GitHub profile</a>.
-      </p>
-    </section>
-
-    <!-- SECTION 3: FUN / JAVASCRIPT FEATURES -->
-    <section id="features" class="content-section">
-      <h2>Fun Stuff (JavaScript Features)</h2>
-
-      <div class="feature-box">
-        <h3>🕐 Live Time Counter</h3>
-        <p id="live-clock">Loading time...</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>⏳ Countdown to New Year</h3>
-        <p id="countdown">Calculating...</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>🎲 Interactive Button</h3>
-        <button id="quote-btn">Get a Random Quote</button>
-        <p id="quote-display">Click the button to see a quote!</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>🌗 Theme Switcher</h3>
-        <button id="theme-btn">Toggle Dark / Light Mode</button>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="content-section alt-bg">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:juandelacruz@example.com">juandelacruz@example.com</a></p>
+    <!-- SECTION 2: Destinations -->
+    <section id="destinations" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-label centered">TOP DESTINATIONS</div>
+        <h2 class="centered">Where to <span class="highlight">Go</span></h2>
+        <p class="section-subtitle">Hand-picked must-see places across the archipelago</p>
+
+        <div class="dest-grid">
+
+          <!-- Palawan — hero card (wide) -->
+          <div class="dest-card dest-hero">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=900&q=80" alt="El Nido Palawan limestone cliffs and turquoise lagoon" class="dest-img" />
+              <div class="dest-img-overlay">
+                <span class="dest-badge">&#127942; #1 in Asia</span>
+                <div class="dest-title-overlay">
+                  <h3>Palawan</h3>
+                  <p>The Last Frontier</p>
+                </div>
+              </div>
+            </div>
+            <div class="dest-body">
+              <p class="dest-region">&#128205; MIMAROPA Region</p>
+              <p>Home to the Puerto Princesa Underground River (UNESCO World Heritage Site),
+                crystal-clear lagoons, and the island-hopping paradise of El Nido and Coron.</p>
+              <ul class="dest-highlights">
+                <li>&#129347; El Nido Island Hopping</li>
+                <li>&#128676; Underground River Tour</li>
+                <li>&#128160; Coron Wreck Diving</li>
+              </ul>
+              <a href="https://www.palawan.gov.ph" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Official Palawan Site &#8599;</a>
+            </div>
+          </div>
+
+          <!-- Boracay -->
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="White Beach Boracay" class="dest-img" />
+              <div class="dest-img-overlay">
+                <span class="dest-badge">&#127749; Best Beach</span>
+                <div class="dest-title-overlay"><h3>Boracay</h3><p>White Sand Paradise</p></div>
+              </div>
+            </div>
+            <div class="dest-body">
+              <p class="dest-region">&#128205; Aklan, Western Visayas</p>
+              <p>4 km of powdery White Beach, world-class water sports, and sunsets that leave every visitor speechless.</p>
+              <ul class="dest-highlights">
+                <li>&#127940; Kitesurfing &amp; Windsurfing</li>
+                <li>&#127749; White Beach Sunset</li>
+                <li>&#127961; Beachfront Dining</li>
+              </ul>
+              <a href="https://tourism.gov.ph" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Explore Visayas &#8599;</a>
+            </div>
+          </div>
+
+          <!-- Bohol -->
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80" alt="Chocolate Hills Bohol Philippines" class="dest-img" />
+              <div class="dest-img-overlay">
+                <span class="dest-badge">&#127940; Most Unique</span>
+                <div class="dest-title-overlay"><h3>Bohol</h3><p>Chocolate Hills &amp; Tarsiers</p></div>
+              </div>
+            </div>
+            <div class="dest-body">
+              <p class="dest-region">&#128205; Central Visayas</p>
+              <p>Over 1,200 perfectly cone-shaped hills, the world's tiniest primate, and a scenic jungle river cruise.</p>
+              <ul class="dest-highlights">
+                <li>&#9968;&#65039; Chocolate Hills</li>
+                <li>&#128048; Tarsier Sanctuary</li>
+                <li>&#9973; Loboc River Cruise</li>
+              </ul>
+              <a href="https://www.tourismbohol.com.ph" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Visit Bohol &#8599;</a>
+            </div>
+          </div>
+
+          <!-- Siargao -->
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Siargao Island surf" class="dest-img" />
+              <div class="dest-img-overlay">
+                <span class="dest-badge">&#127940; Surf Capital</span>
+                <div class="dest-title-overlay"><h3>Siargao</h3><p>Cloud 9 Waves</p></div>
+              </div>
+            </div>
+            <div class="dest-body">
+              <p class="dest-region">&#128205; Surigao del Norte, Caraga</p>
+              <p>World-famous Cloud 9 surf break, stunning lagoons, coconut forests, and a chilled island lifestyle.</p>
+              <ul class="dest-highlights">
+                <li>&#127940; Cloud 9 Surfing</li>
+                <li>&#127965; Sugba Lagoon</li>
+                <li>&#127796; Island Hopping</li>
+              </ul>
+              <a href="https://tourism.gov.ph" target="_blank" rel="noopener noreferrer" class="btn btn-outline">DOT Philippines &#8599;</a>
+            </div>
+          </div>
+
+          <!-- Banaue -->
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?w=600&q=80" alt="Banaue Rice Terraces" class="dest-img" />
+              <div class="dest-img-overlay">
+                <span class="dest-badge">&#127807; UNESCO Heritage</span>
+                <div class="dest-title-overlay"><h3>Banaue</h3><p>8th Wonder of the World</p></div>
+              </div>
+            </div>
+            <div class="dest-body">
+              <p class="dest-region">&#128205; Ifugao, Cordillera</p>
+              <p>Rice terraces carved 2,000 years ago by the Ifugao people — a UNESCO World Heritage testament to ancient ingenuity.</p>
+              <ul class="dest-highlights">
+                <li>&#127807; Batad Amphitheater Terraces</li>
+                <li>&#129506; Mountain Trekking</li>
+                <li>&#127968; Ifugao Cultural Village</li>
+              </ul>
+              <a href="https://ifugao.gov.ph" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ifugao Province &#8599;</a>
+            </div>
+          </div>
+
+          <!-- Cebu -->
+          <div class="dest-card">
+            <div class="dest-img-wrap">
+              <img src="https://images.unsplash.com/photo-1588861486860-eb80b4df5a2e?w=600&q=80" alt="Cebu Philippines turquoise coastal waters" class="dest-img" />
+              <div class="dest-img-overlay">
+                <span class="dest-badge">&#128011; Whale Sharks</span>
+                <div class="dest-title-overlay"><h3>Cebu</h3><p>Queen City of the South</p></div>
+              </div>
+            </div>
+            <div class="dest-body">
+              <p class="dest-region">&#128205; Central Visayas</p>
+              <p>Swim with whale sharks in Oslob, brave Kawasan Falls canyoneering, and explore centuries of Spanish colonial history.</p>
+              <ul class="dest-highlights">
+                <li>&#129416; Whale Shark Watching</li>
+                <li>&#128166; Kawasan Falls</li>
+                <li>&#9962; Magellan's Cross</li>
+              </ul>
+              <a href="https://www.cebucity.gov.ph" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Cebu City &#8599;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Culture & Food -->
+    <section id="culture" class="section">
+      <div class="section-inner">
+        <div class="section-label centered">CULTURE &amp; FLAVORS</div>
+        <h2 class="centered">Taste &amp; <span class="highlight">Experience</span></h2>
+        <p class="section-subtitle">Immerse yourself in the warmth, traditions, and food of Filipino life</p>
+        <div class="culture-grid">
+
+          <div class="culture-card">
+            <div class="culture-body">
+              <span class="culture-icon">&#129385;</span>
+              <h3>Lechon</h3>
+              <p>The king of Filipino celebrations — a whole roasted pig with crackling skin cooked over charcoal for hours. Cebu lechon is legendary worldwide.</p>
+            </div>
+          </div>
+
+          <div class="culture-card">
+            <div class="culture-body">
+              <span class="culture-icon">&#127858;</span>
+              <h3>Adobo</h3>
+              <p>The unofficial national dish — chicken or pork braised in vinegar, soy sauce, and garlic. Every family has their own secret recipe.</p>
+            </div>
+          </div>
+
+          <div class="culture-card">
+            <div class="culture-body">
+              <span class="culture-icon">&#127881;</span>
+              <h3>Sinulog Festival</h3>
+              <p>One of Asia's grandest festivals held in Cebu every January — vibrant street dancing, colorful costumes, and a solemn religious procession.</p>
+            </div>
+          </div>
+
+          <div class="culture-card">
+            <div class="culture-body">
+              <span class="culture-icon">&#127843;</span>
+              <h3>Halo-Halo</h3>
+              <p>The ultimate Filipino dessert — shaved ice topped with ube, leche flan, sweetened beans, jellies, and evaporated milk in one colorful bowl.</p>
+            </div>
+          </div>
+
+          <div class="culture-card">
+            <div class="culture-body">
+              <span class="culture-icon">&#128653;</span>
+              <h3>Jeepney</h3>
+              <p>The flamboyantly decorated icon of Philippine roads. Originally made from US military jeeps — now a symbol of Filipino creativity and culture.</p>
+            </div>
+          </div>
+
+          <div class="culture-card">
+            <div class="culture-body">
+              <span class="culture-icon">&#129309;</span>
+              <h3>Bayanihan Spirit</h3>
+              <p>The uniquely Filipino spirit of communal unity. Visitors are welcomed like family — hospitality here isn't just a courtesy, it's a way of life.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Travel Tips -->
+    <section id="tips" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-label centered">BEFORE YOU GO</div>
+        <h2 class="centered">Travel <span class="highlight">Tips</span></h2>
+        <p class="section-subtitle">Everything you need for a smooth and unforgettable Philippine adventure</p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-num">01</div>
+            <div class="tip-icon">&#128197;</div>
+            <h3>Best Time to Visit</h3>
+            <p>Dry season runs <strong>November to May</strong>. December–February is the coolest and most comfortable. Avoid June–October (typhoon season) on the eastern coast.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-num">02</div>
+            <div class="tip-icon">&#9992;&#65039;</div>
+            <h3>Getting Around</h3>
+            <p>Domestic flights link major islands quickly. Ferries connect the Visayas islands. Jeepneys, tricycles, and habal-habal are the local way to get around.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-num">03</div>
+            <div class="tip-icon">&#128181;</div>
+            <h3>Budget Guide</h3>
+            <p>Budget travel: &#8369;1,500–&#8369;2,500/day. Mid-range: &#8369;3,000–&#8369;6,000/day. Always carry cash — many remote islands don't accept credit cards.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-num">04</div>
+            <div class="tip-icon">&#128241;</div>
+            <h3>Stay Connected</h3>
+            <p>Buy a Globe or Smart SIM at the airport for affordable data. Wi-Fi is widely available in tourist areas. Signal can be weak on remote islands.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-num">05</div>
+            <div class="tip-icon">&#128138;</div>
+            <h3>Health &amp; Safety</h3>
+            <p>Drink bottled water only. Apply sunscreen and insect repellent daily. Most tourist areas are safe — keep an eye on belongings in busy markets and terminals.</p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-num">06</div>
+            <div class="tip-icon">&#128591;</div>
+            <h3>Cultural Etiquette</h3>
+            <p>Use "po" and "opo" when speaking to elders. Remove shoes before entering a home. Dress modestly when visiting churches. Tipping is appreciated but not required.</p>
+          </div>
+        </div>
+
+        <!-- Interactive Button -->
+        <div class="fact-feature">
+          <div class="fact-feature-inner">
+            <div class="fact-icon-big">&#127477;&#127469;</div>
+            <h3>Did You Know?</h3>
+            <p>Click the button to discover an amazing fact about the Philippines!</p>
+            <button id="factBtn" class="btn btn-primary">&#128270; Show a Philippines Fact</button>
+            <div id="factBox" class="fact-box" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Countdown -->
+    <section id="countdown-section" class="section countdown-section">
+      <div class="countdown-bg"></div>
+      <div class="countdown-content">
+        <div class="section-label centered light">NEXT CELEBRATION</div>
+        <h2 class="centered light">Philippine <span class="highlight">Independence Day</span></h2>
+        <p class="countdown-sub" id="cd-event-label">&#127878; June 12, 2027 — Araw ng Kalayaan</p>
+        <div class="countdown-wrapper">
+          <div class="countdown-item">
+            <span id="cd-days" class="cd-value">00</span>
+            <span class="cd-label">Days</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <span id="cd-hours" class="cd-value">00</span>
+            <span class="cd-label">Hours</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <span id="cd-minutes" class="cd-value">00</span>
+            <span class="cd-label">Minutes</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <span id="cd-seconds" class="cd-value">00</span>
+            <span class="cd-label">Seconds</span>
+          </div>
+        </div>
+        <button id="themeToggleBtn" class="btn btn-ghost-light">&#9728;&#65039; Switch to Light Mode</button>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Useful Links -->
+    <section id="contact" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-label centered">PLAN YOUR TRIP</div>
+        <h2 class="centered">Useful <span class="highlight">Links</span></h2>
+        <p class="section-subtitle">Official resources to help you plan your Philippine adventure</p>
+        <div class="links-grid">
+          <a href="https://tourism.gov.ph" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">&#127963;&#65039;</span>
+            <h3>Dept. of Tourism</h3>
+            <p>Official PH travel guides, visa info &amp; destination resources</p>
+            <span class="link-arrow">&#8599;</span>
+          </a>
+          <a href="https://immigration.gov.ph" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">&#128706;</span>
+            <h3>Bureau of Immigration</h3>
+            <p>Visa applications, extensions &amp; immigration services</p>
+            <span class="link-arrow">&#8599;</span>
+          </a>
+          <a href="https://www.cebupacificair.com" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">&#9992;&#65039;</span>
+            <h3>Cebu Pacific Air</h3>
+            <p>Affordable domestic &amp; international flights in the Philippines</p>
+            <span class="link-arrow">&#8599;</span>
+          </a>
+          <a href="https://www.philippineairlines.com" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">&#127758;</span>
+            <h3>Philippine Airlines</h3>
+            <p>The flag carrier — domestic and international routes</p>
+            <span class="link-arrow">&#8599;</span>
+          </a>
+          <a href="https://www.palawan.gov.ph" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">&#128506;</span>
+            <h3>Palawan Tourism</h3>
+            <p>Plan your trip to the last frontier of the Philippines</p>
+            <span class="link-arrow">&#8599;</span>
+          </a>
+          <a href="https://www.choosephilippines.com" target="_blank" rel="noopener noreferrer" class="link-card">
+            <span class="link-icon">&#128247;</span>
+            <h3>Choose Philippines</h3>
+            <p>Travel inspiration, galleries &amp; stories about the best of PH</p>
+            <span class="link-arrow">&#8599;</span>
+          </a>
+        </div>
+      </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>&copy; 2026 Juan Dela Cruz. Built with HTML, CSS &amp; JavaScript. Hosted on GitHub Pages.</p>
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">&#127796; Discover <span class="highlight">Philippines</span></p>
+      <p>Your guide to the most beautiful islands in Southeast Asia.</p>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#culture">Culture</a>
+        <a href="#tips">Travel Tips</a>
+        <a href="#contact">Links</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Discover Philippines. A fan travel website. Not affiliated with the Philippine government. Images via picsum.photos.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
